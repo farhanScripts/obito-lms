@@ -14,7 +14,6 @@ class Category extends Model
     protected $fillable = [
         'name',
         'slug',
-        'photo',
     ];
 
     public function setNameAttribute($value)
@@ -23,7 +22,8 @@ class Category extends Model
         $this->attributes['slug'] = Str::slug($value);
     }
 
-    public function courses():HasMany{
+    public function courses(): HasMany
+    {
         return $this->hasMany(Course::class, 'category_id', 'id');
     }
 }
