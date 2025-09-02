@@ -18,6 +18,7 @@ use App\Filament\Resources\CategoryResource\RelationManagers;
 class CategoryResource extends Resource
 {
     protected static ?string $model = Category::class;
+    protected static ?string $navigationGroup = 'Management';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
