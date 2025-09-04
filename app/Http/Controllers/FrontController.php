@@ -28,7 +28,7 @@ class FrontController extends Controller
     }
     public function index()
     {
-        return 'test';
+        return view('front.index');
     }
 
     public function pricing()
