@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Models\Transaction;
+use App\Repositories\CourseRepository;
+use App\Repositories\CourseRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 use App\Repositories\PricingRepository;
 use App\Repositories\PricingRepositoryInterface;
@@ -18,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->singleton(PricingRepositoryInterface::class, PricingRepository::class);
         $this->app->singleton(TransactionRepositoryInterface::class, TransactionRepository::class);
+        $this->app->singleton(CourseRepositoryInterface::class, CourseRepository::class);
     }
 
     /**
