@@ -79,7 +79,7 @@
             </p>
             <p class="flex items-center gap-[6px]">
               <img src="{{ asset('assets/images/icons/menu-board-green.svg') }}"" class=" w-6 flex shrink-0" alt="icon">
-              <span class="font-semibold text-sm leading-[21px]">{{ $course->content_count }} Lessons</span>
+              <span class="font-semibold text-sm leading-[21px]">{{ $course->getContentCountAttributute() }} Lessons</span>
             </p>
           </div>
           <div class="flex gap-4 items-center">
@@ -390,8 +390,8 @@
 @endsection
 
 @push('after-scripts')
-  {{--
-  <script src="{{  asset('js/dropdown-navbar.js') }}"></script> --}}
+  
+  <script src="{{  asset('js/dropdown-navbar.js') }}"></script>
   <script src="{{  asset('js/tabs.js') }}"></script>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"

@@ -70,3 +70,9 @@
             </div>
         </main>
 @endsection
+
+@push('after-scripts')
+    <script src="{{asset('js/dropdown-navbar.js')}}"></script>
+    <script src="{{asset('js/photo-upload.js')}}"></script>
+
+@endpush

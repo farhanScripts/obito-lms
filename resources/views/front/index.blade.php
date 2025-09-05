@@ -18,12 +18,12 @@
           <div class="flex items-center gap-[18px]">
             <a href="{{ route('front.pricing') }}"
               class="flex items-center rounded-full h-[67px] py-5 px-[30px] gap-[10px] bg-obito-green hover:drop-shadow-effect transition-all duration-300">
-              <span class="text-white font-semibold text-lg">Get Started</span>
+              <span class="text-white font-semibold text-lg">See Plan</span>
             </a>
-            <a href="#"
+            <a href="{{ route('dashboard') }}"
               class="flex items-center rounded-full h-[67px] border border-obito-grey py-5 px-[30px] bg-white gap-[10px] hover:border-obito-green transition-all duration-300">
               <img src="{{asset('assets/images/icons/play-circle-fill.svg')}}" class="size-8 flex shrink-0" alt="icon">
-              <span class="font-semibold text-lg">How It Works</span>
+              <span class="font-semibold text-lg">See Courses</span>
             </a>
           </div>
         </div>

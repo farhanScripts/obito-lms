@@ -37,6 +37,7 @@
                     class="flex items-center justify-center gap-[10px] rounded-full py-[14px] px-5 bg-obito-green hover:drop-shadow-effect transition-all duration-300">
                     <span class="font-semibold text-white">Sign In to My Account</span>
                 </button>
+                <a href="{{ route('register') }}" class="flex items-center justify-center gap-[10px] rounded-full py-[14px] px-5 bg-obito-grey hover:drop-shadow-effect transition-all duration-300 text-obito-green">Sign Up Here</a>
             </form>
         </section>
         <div class="relative flex w-1/2 shrink-0">
