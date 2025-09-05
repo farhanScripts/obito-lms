@@ -26,6 +26,7 @@ class Transaction extends Model
 
     protected $casts = [
         'started_at' => 'date',
+        'ended_at' => 'date',
         'deleted_at' => 'date',
         'sub_total_amount' => 'integer',
         'grand_total_amount' => 'integer',

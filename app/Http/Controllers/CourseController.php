@@ -42,7 +42,7 @@ class CourseController extends Controller
         // eager loading
         $course->load([
             'category',
-            'benefits',
+            'courseBenefits',
             'courseSections.sectionContents',
             'courseMentors.mentor'
         ]);
